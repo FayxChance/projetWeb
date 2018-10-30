@@ -1,8 +1,8 @@
 <?php
 session_start();
-$host_name = 'db759366338.hosting-data.io';
-$database = 'db759366338';
-$user_name = 'dbo759366338';
+$host_name = 'private';
+$database = 'projetWeb';
+$user_name = 'root';
 $password = 'benjamin';
 $connect = mysqli_connect($host_name, $user_name, $password, $database);
 
