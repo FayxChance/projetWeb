@@ -5,8 +5,9 @@
 
 <section>
 <?php
-	$sql = "SELECT * FROM `Projet` " ;
-	$results = mysqli_query($c,$sql);		
+
+
+
 	while ($row = mysqli_fetch_assoc($results)) {
 		
 	}		
