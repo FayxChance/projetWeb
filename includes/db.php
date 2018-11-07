@@ -1,6 +1,6 @@
 <?php
 session_start();
-$host_name = 'localhost';
+$host_name = '10.103.1.102';
 $database = 'ScriptGate';
 $user_name = 'root';
 $password = 'RooT!';
