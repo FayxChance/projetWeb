@@ -1,9 +1,9 @@
 <?php
 session_start();
-$host_name = '10.103.1.102';
+$host_name = 'private';
 $database = 'ScriptGate';
 $user_name = 'root';
-$password = 'RooT!';
+$password = 'benjamin';
 $connect = mysqli_connect($host_name, $user_name, $password, $database);
 
 if (mysqli_connect_errno()) {
