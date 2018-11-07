@@ -1,9 +1,9 @@
 <?php
 session_start();
-$host_name = 'private';
-$database = 'projetWeb';
+$host_name = 'localhost';
+$database = 'ScriptGate';
 $user_name = 'root';
-$password = 'benjamin';
+$password = 'RooT!';
 $connect = mysqli_connect($host_name, $user_name, $password, $database);
 
 if (mysqli_connect_errno()) {
