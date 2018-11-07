@@ -2,7 +2,7 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title> LGBT + SAVOIE </title>
+    <title> LGBT+ SAVOIE </title>
     <link rel="stylesheet" href="./style/style.css">
   </head>
   <body>
