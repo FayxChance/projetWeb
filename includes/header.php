@@ -14,6 +14,7 @@
         <li><a href="./accueil.php"  >   Accueil       </a></li>
         <li><a href="./actus.php"    >   Actus         </a></li>
         <li><a href="./agenda.php"   >   Agenda        </a></li>
+        <li><a href="./projets.php"  >   Projets       </a></li>
         <li><a href="./galerie.php"  >   Galerie       </a></li>
         <li><a href="./adhesion.php" >   Adhésion      </a></li>
         <li><a href="./contact.php"  >   Contact       </a></li>
