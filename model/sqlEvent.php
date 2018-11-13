@@ -1,17 +1,17 @@
 <?php
-  function selectActus()
+  function selectEvent()
   {
       $select= "SELECT * FROM `Evenement`(`idProjet`,`nomEvenement`,`descriptionEvenement`,`dateEvenement`,`lieuEvenement`)";
       return mysqli_query($_SESSION['connect'], $select) or die("Erreur envoie");
   }
 
- function deleteActus($id)
+ function deleteEvent($id)
   {
       $delete= "DELETE * FROM ``Evenement``(`idProjet`,`nomEvenement`,`descriptionEvenement`,`dateEvenement`,`lieuEvenement`) WHERE id=$id ";
       return mysqli_query($_SESSION['connect'], $delete) or die("Erreur envoie");
   } 
 
-   function inserActus($id,$nom,$description,$date,$lieu)
+   function inserEvent($id,$nom,$description,$date,$lieu)
   {
       $inser= "INSERT INTO `Evenement`(`idProjet`,`nomEvenement`,`descriptionEvenement`,`dateEvenement`,`lieuEvenement`)
                     VALUES('$id','$nom','$description','$date','$lieu')";
