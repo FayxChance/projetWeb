@@ -6,7 +6,7 @@
   include "./model/sqlActus.php";
   $id=1;
   $utilisateur=selectUtilisateur($id);
-  echo $utilisateur["idUtilisateur"];
+  echo mysqli_fetch_assoc($utilisateur["idUtilisateur"]);
 ?>
 
 
