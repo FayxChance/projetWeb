@@ -1,6 +1,7 @@
 <?php
 function selectUtilisateur($id)
 {
-    $select="SELECT * FROM Utilisateurs WHERE idUtilisateur=$id";
+    $select="SELECT (`nomUtilisateur`,`prenomUtilisateurs`,`pseudoUtilisateur`,`telUtilisateur`,`mailUtilisateur`,`mdpUtilisateur`,`roleUtilisateur`,`fonctionUtilisateur`) 
+    FROM Utilisateurs (`nomUtilisateur`,`prenomUtilisateurs`,`pseudoUtilisateur`,`telUtilisateur`,`mailUtilisateur`,`mdpUtilisateur`,`roleUtilisateur`,`fonctionUtilisateur`) WHERE id=$id";
     return mysqli_query($_SESSION['connect'], $select);
 }
