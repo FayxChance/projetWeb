@@ -1,7 +1,7 @@
 <?php
-  function selectActus()
+  function selectActus($id)
   {
-      $select= "SELECT * FROM `Actu`(`titreActus`,`dateActus`,`utilisateurActus`,`contenuActus`)";
+      $select= "SELECT (`titreActus`,`dateActus`,`utilisateurActus`,`contenuActus`) FROM `Actu`(`titreActus`,`dateActus`,`utilisateurActus`,`contenuActus`) WHERE id=$id";
       return mysqli_query($_SESSION['connect'], $select) or die("Erreur envoie");
   }
 
