@@ -10,7 +10,7 @@ function formulaire_login ()
 	</p>
 	<p>
 		<label for='motdepasse_login'>Mot de passe</label>
-		<input type='password' name='motdepasse_login' size='20'/>
+		<input type='password' name='motdepasse_login' size='16'/>
 	</p>
 	<p>
 		<label for='action'></label>
