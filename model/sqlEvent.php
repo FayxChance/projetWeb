@@ -7,7 +7,7 @@
 
  function deleteEvent($id)
   {
-      $delete= "DELETE * FROM ``Evenement``(`idProjet`,`nomEvenement`,`descriptionEvenement`,`dateEvenement`,`lieuEvenement`) WHERE id=$id ";
+      $delete= "DELETE (`idProjet`,`nomEvenement`,`descriptionEvenement`,`dateEvenement`,`lieuEvenement`) FROM `Evenement`(`idProjet`,`nomEvenement`,`descriptionEvenement`,`dateEvenement`,`lieuEvenement`) WHERE id=$id ";
       return mysqli_query($_SESSION['connect'], $delete) or die("Erreur envoie");
   } 
 
