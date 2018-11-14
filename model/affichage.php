@@ -17,8 +17,18 @@ session_start();
                             <h4>"        .$row['dateActus']."                             </h4>
                             <p>"          .$row['contenuActus']."                       </p>
                             </section>";
-                            $utlisateur=mysqli_fetch_assoc()
+                            $row=mysqli_fetch_assoc($row)
+                            $utlisateur=mysqli_fetch_assoc($utilisateur)
                 }
     }
 
-    function affiche
+    function afficheEvent(){
+    
+
+
+
+
+
+
+
+    }
