@@ -1,13 +1,13 @@
 <?php
-  function selectActus()
+  function selectActus($id)
   {
-      $select= "SELECT * FROM `Actu`(`titreActus`,`dateActus`,`utilisateurActus`,`contenuActus`)";
+      $select= "SELECT (`titreActus`,`dateActus`,`utilisateurActus`,`contenuActus`) FROM `Actu`(`titreActus`,`dateActus`,`utilisateurActus`,`contenuActus`) WHERE id=$id";
       return mysqli_query($_SESSION['connect'], $select) or die("Erreur envoie");
   }
 
  function deleteActus($id)
   {
-      $delete= "DELETE * FROM `Actu`(`titreActus`,`dateActus`,`utilisateurActus`,`contenuActus`) WHERE id=$id ";
+      $delete= "DELETE (`titreActus`,`dateActus`,`utilisateurActus`,`contenuActus`) FROM `Actu`(`titreActus`,`dateActus`,`utilisateurActus`,`contenuActus`) WHERE id=$id ";
       return mysqli_query($_SESSION['connect'], $delete) or die("Erreur envoie");
   } 
 
