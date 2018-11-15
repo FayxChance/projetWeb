@@ -5,3 +5,11 @@ function selectUtilisateur($id)
     FROM Utilisateurs (`nomUtilisateur`,`prenomUtilisateurs`,`pseudoUtilisateur`,`telUtilisateur`,`mailUtilisateur`,`mdpUtilisateur`,`roleUtilisateur`,`fonctionUtilisateur`) WHERE id=$id";
     return mysqli_query($_SESSION['connect'], $select);
 }
+
+function selectAllUtilisateurs()
+{
+	$select="SELECT * FROM Utilisateurs ";
+	return mysqli_query($_SESSION['connect'], $select) ;
+
+}
+?>
