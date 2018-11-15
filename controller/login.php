@@ -5,7 +5,7 @@ include "verif.php";
 
 
 while ($row = mysqli_fetch_assoc(selectAllUtilisateurs())) {
-		if $_POST['pseudo_login']==$row['pseudoUtilisateur'] and $_POST['motdepasse_login']==$row['mdpUtilisateur'] {
+		if $_POST['pseudoLogin']==$row['pseudoUtilisateur'] and $_POST['mdpLogin']==$row['mdpUtilisateur'] {
 		$_SESSION['connecte']=true;
 		$_SESSION['role']=$row['roleUtilisateur'];
 		}
